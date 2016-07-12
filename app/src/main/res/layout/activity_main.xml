@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#FFFFFF"
+android:orientation="vertical" >
+
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="60dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout"
+    android:weightSum="1">
+    <ImageButton
+        android:id="@+id/btn_mic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/microphone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Clicca e parla, per registrare uno studente"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        android:id="@+id/testo1" />
+</LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Cognome"
+        android:id="@+id/cognome"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nome:"
+        android:id="@+id/nome"
+        android:layout_below="@+id/cognome"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_alignRight="@+id/matricola"
+        android:layout_alignEnd="@+id/matricola" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Matricola:"
+        android:id="@+id/matricola"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_below="@+id/nome" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imagePhoto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/matricola" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cognomeOut"
+        android:layout_above="@+id/nome"
+        android:layout_toRightOf="@+id/cognome"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nomeOut"
+        android:layout_above="@+id/matricola"
+        android:layout_toRightOf="@+id/cognome"
+        android:layout_below="@+id/cognome"
+        android:layout_alignRight="@+id/cognomeOut"
+        android:layout_alignEnd="@+id/cognomeOut" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/matricolaOut"
+        android:layout_above="@+id/imagePhoto"
+        android:layout_toRightOf="@+id/cognome"
+        android:layout_below="@+id/nome"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+</RelativeLayout>
